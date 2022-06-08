@@ -1,0 +1,231 @@
+
+:root{
+    --display-line : 50%;
+    --white: #fff;
+    --title-size:1.7rem;
+}
+
+body{
+    padding: 0;
+}
+
+.MainContainer{
+    width: 100%;
+    border: none;
+}
+
+.MainContainer .navHeader{
+    display: none;
+}
+
+.Right{
+    display:none;
+}
+
+.navHeader{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    padding: 2rem 0 2rem 2rem;
+    color: var(--secondary);
+    background: var(--background);
+    /* filter: blur(0); */
+}
+
+
+.containereSideBarLeft{
+    display:none;
+}
+.title{
+    font-size: var(--text-size);
+}
+
+#arrowBack{
+    margin-right: 3rem;
+}
+.header-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* filter: blur(1rem); */
+    z-index: 1;
+}
+
+.header__title{
+    font-size:var(--title-size);
+    font-family: "twitter",serif;
+    font-weight: bold;
+}
+.header__left, .hearder__right{
+    width: 20%;
+}
+.header__center{
+    width: 60%;
+}
+
+.avatar{
+    background: center/contain url("../assets/img/avatar.png") no-repeat;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+}
+
+.hearder__right--icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hearder__right--icon svg{
+    width: 25px;
+    fill: var(--secondary);
+}
+
+
+.item-iconn ion-icon{
+    font-size: 25px;
+    color: var(--secondary);
+}
+
+.navbarBottom{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.navbarBottom nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    border-top: 1px solid var(--border);
+    background-color: var(--background);
+}
+
+
+  .aside__btnTweet{
+    position: fixed;
+    bottom: 10rem ;
+    width: 6rem;
+    right: 2.5rem;
+    padding: 1.7rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+  }
+
+  .tweet-btn svg{
+    fill: white;
+}
+
+  /* */
+
+  @keyframes fade {
+    from {transform: translateX(-400px)}
+    to {transform: translateX(0px)}
+  }
+
+  .modalAccount{
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: var(--background);
+    color: var(--secondary);
+    z-index: 100;
+    padding: 1rem 3rem;
+    display: none;
+  }
+  
+  div.modalAccount.active{
+    display: block;
+    overflow: auto;
+    animation: fade 1s ease-in-out;
+  }
+
+.modalAccount__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.modalAccount__account{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnAdd{
+    border: 1px solid rgba(255, 255, 255, 0.459);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    line-height: 0;
+    padding: 1%;
+}
+.modalAccount__info{
+    color: var(--secondary);
+    font-size: var(--text-size);
+}
+
+.modalAccount__info--user{
+    margin: 2rem 0;
+}
+
+.modalAccount__info-fullname{
+    font-size: var(--text-size);
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+.modalAccount__info-username{
+    font-size: var(--text-size);
+    color: var(--tertiary);
+}
+
+.modalAccount__info--follow{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.modalAccount__info--follow a{
+    color: var(--tertiary);
+    font-size: var(--text-size);
+    margin-right: 2rem;
+    text-decoration: none;
+}
+
+.modalAccount__info span{
+    font-size: var(--text-size);
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+
+.modalAccount__nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.modalAccount__nav a{
+    color: var(--secondary);
+    font-size: var(--text-size);
+    text-decoration: none;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.modalAccount__nav span{
+    font-size: var(--text-size);
+    margin-left: 1.5rem;
+    color: var(--secondary);
+}

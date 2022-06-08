@@ -1,0 +1,280 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+.fond{
+    height: 800px;
+}
+.body{
+position: relative;
+}
+
+.contenair1{
+    display: grid;
+    padding:0 0 0 20px;
+    grid-template-rows: 150px 200px 120px 400px;
+}
+.contenue{
+     background-image: url(../assets/img/twitter.png);
+     height:900px;
+     position: relative;
+}
+
+.imglogo{
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+i{
+width: 30px;
+}
+
+.text{
+    font-size: 60px;
+    font-weight: bolder;
+    transition: all 1s;
+}
+
+
+.text2{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.logo{
+    width: 8%;
+    padding-top: 50px;
+}
+
+.apple{
+    border-color: transparent;
+    width: 350px;
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px 0;
+}
+
+
+.height{
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+.ou{
+    width: 350px;
+}
+.condition{
+    font-size: 11px;
+    width: 350px;
+}
+
+.compte{
+    font-weight: bold;
+    margin: 30px 0 10px 0;
+    font-size: 20px;
+   
+}
+
+.google:hover{
+    background-color:rgba(0, 0, 0, 0.082);
+    transition: all 1s;
+}
+
+.apple:hover{
+    background-color:rgba(53, 141, 156, 0.082);
+    transition: all 1s;
+}
+.google{
+    border: 1px solid transparent;
+    width: 350px;
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+
+}
+
+.connection{
+    border: 1px solid rgba(0, 0, 0, 0.561);
+    border-radius: 25px;
+    text-align: center;
+    width: 350px;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.connection:hover{
+    background-color:rgba(61, 197, 231, 0.178);
+    transition: all 1s;
+}
+
+.inscription{
+  
+    width: 350px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: rgb(61, 197, 231);
+    border-color: transparent;
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.inscription:hover{
+    background-color: rgb(41, 163, 219);
+    transition: all 1s;
+}
+
+.logoModal{
+    width:7%;
+}
+
+.Pmodale{
+font-size: 25px;
+font-weight: bold;
+}
+
+input{
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+select{
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+select#mois{
+    width: 45%;
+}
+select#jour{
+    width: 25%;
+}
+select#annee{
+    width: 25%;
+}
+
+#width-modal{
+    max-width: 600px;
+}
+
+div.border-r{
+    border-radius: 15px;
+    width: 600px;
+}
+
+.lien{
+    margin-right: 10px;
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.513);
+    text-decoration: none;
+}
+
+.lien:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+#span {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+  
+    transform: translateY(-50%);
+    width: 1.6rem;
+    height: 1.6rem;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.459);
+    border-radius: 5px;
+}
+
+
+
+@media only screen and (max-width: 576px){
+
+
+    .contenair1{
+        display: grid;
+        padding:0 0 0 36px;
+        grid-template-rows: 150px 140px 120px 400px;
+        float: right;
+        transition: all 1s;
+    }
+
+.contenue2{
+
+     background-image: url(../assets/img/twitter.png);
+     height:250px;
+     position: relative;
+}
+
+  .imglogo2{
+
+    width: 20%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text{
+    font-size: 40px;
+    font-weight: bolder;
+    transition: all 1s;
+}
+
+.text2{
+    font-size: 30px;
+    transition: all 1s;
+}
+}
+
+
+@media only screen and (max-width: 768px){
+
+.contenue2{
+
+     background-image: url(../assets/img/twitter.png);
+     background-image: cover;
+     height:300px;
+     position: relative;
+}
+
+  .imglogo2{
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+}
+@media only screen and (max-width: 992px){
+
+.contenue2{
+
+     background-image: url(../assets/img/twitter.png);
+     background-image: cover;
+     height:300px;
+     position: relative;
+}
+
+  .imglogo2{
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+}

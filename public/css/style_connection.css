@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+}
+
+.section1{
+    background-color: rgba(112, 112, 112, 0.52);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.fblanc{
+    background-color: white;
+    width: 600px;
+    height: 684px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+}
+
+.logoModal{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:7%;
+    margin-top: 20px;
+}
+
+.google{
+    border: 1px solid rgba(58, 58, 58, 0.239);
+    border-radius: 25px;
+    color: rgba(0, 0, 0, 0.541);
+}
+
+.none{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+i{
+    padding-right: 10px;
+}
+
+
+.apple{
+    color: black;
+    border: 1px solid rgba(58, 58, 58, 0.239);
+    border-radius: 25px;
+}
+
+.middle{
+    margin-top: 30px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hr{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.height{
+    height: 1px;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.103);
+
+}
+
+.ensemble{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+input{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+::placeholder{
+    color: rgba(80, 80, 80, 0.226);
+}
+
+
+.Next{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-color: black;
+    background-color: black;  
+    width: 100%;
+    border-radius: 40px;
+    margin-top: 35px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.sign{
+    margin-top: 50px;
+}
+
+.google:hover{
+    background-color:rgba(0, 0, 0, 0.082);
+    transition: all 1s;
+}
+
+.apple:hover{
+    background-color:rgba(53, 141, 156, 0.082);
+    transition: all 1s;
+}

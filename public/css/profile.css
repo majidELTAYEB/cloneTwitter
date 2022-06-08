@@ -1,0 +1,171 @@
+
+  
+.Qui{
+    background-color:var(--brandBackground) ;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+  
+  .FollowItem:hover{
+    background-color: var(--brandBackground) ;
+  }
+  
+  .hos{
+    padding:10px 10px 10px 10px;
+  }
+  
+  .GoBack{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .HeadNamee{
+    color: var(--white);
+  }
+  
+
+
+.ContainBanner{
+    width:100%;
+  }
+  .BannerImg{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .EditButton{
+    height: 50px;
+  }
+  
+  .ContainLocation{
+    color: white;
+    display: flex;
+    height: 40px;
+    padding-top: 10px;
+    color: var(--tertiary);
+    padding-left: 10px;
+  }
+  
+  .Location{
+    display: flex;
+    margin-right: 20px;
+  }
+  
+  .DateJoin{
+    display: flex;
+  }
+  
+  .ContainFollow{
+    display: flex;
+    padding-left: 10px;
+  }
+  
+  .NavProfile{
+    display: flex;
+    height: 60px;
+    padding-top: 10px;
+    flex-direction: row;
+    border-bottom:1px solid var(--border) ;
+  }
+  
+  .elementName{
+    padding-left: 10px;
+  }
+  
+  .NavProfile div a{
+    color: var(--tertiary);
+  }
+  
+  .ContainProfilePic{
+    height: 0;
+  }
+  
+  .ContainProfilePic img{
+  border-radius: 100%;
+    border: black 3px solid;
+  }
+  
+  .Following{
+    margin-right: 10px;
+  }
+  
+  .NavProfile div{
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 10px;
+  }
+  .ContainTweetsPro{
+    width:20%;
+  }
+  
+  .ContainReplies{
+    width: 40%;
+  }
+  
+  .ContainMedia{
+    width:20%;
+  }
+  
+  .ContainLikes{
+    width:20%;
+  }
+  
+  .LinkFollowing{
+    color: var(--tertiary);
+    font-size: 15px;
+  }
+  .LinkFollowers{
+    color: var(--tertiary);
+    font-size: 15px;
+  }
+  
+  .ContainTweetsPro:hover{
+    background-color: var(--brandBackground);
+  }
+  
+  .ContainMedia:hover{
+    background-color: var(--brandBackground);
+  }
+  
+  .ContainReplies:hover{
+    background-color: var(--brandBackground);
+  }
+  
+  .ContainLikes:hover{
+    background-color: var(--brandBackground);
+  }
+  
+  .ButtEdit{
+    border-radius: 50px;
+    height: 10px;
+    width: 10px;
+    background-color: var(--primary);
+    padding: 5px 5px 5px 5px;
+    font-size: 15px;
+  }
+  
+  .EditButton{
+    padding-top: 15px;
+    padding-left: 80%;
+  }
+  
+  .usernameUse{
+    color: var(--tertiary);
+    font-size: 13px;
+  }
+
+  @media screen and (max-width: 1200px){
+    .profile-infoo > div{
+        display: none;
+      }
+    
+      .profile-btnn .option-iconn{
+        display: none;
+      }
+      img .profile-imggg{
+        margin-right: 0;
+      }
+      a.profile-btnn{
+        width: 55px;
+      }
+  }

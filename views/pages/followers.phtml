@@ -1,0 +1,66 @@
+<div class="MainHeader">
+    <div class="MainHeader__arrow">
+        <button id="arrowBack" class="item-iconn btn">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+        </button>
+    </div>
+    <div class="followersTitle">
+        <div class="followersTitle__name">
+            <h2>Test test</h2>
+        </div>
+        <div class="followersTitle__username">
+            <h2>@Test</h2>
+        </div>
+    </div>
+</div>
+
+<div class="containcerFollowers">
+    <div class="container-onglets">
+        <div class="onglets active">Followers</div>
+        <div class="onglets">Following</div>
+    </div>
+
+    <div class="contenu active-contenu">
+        <ul class="Follow">
+        <?php foreach($params['followers'] as $follow): ?>
+            <?=$follow->follower_id?>
+            <?=$follow->follow_id ?>
+                              <li class="FollowItem"><div class="profile-info">
+                                <img class="profile-imggg" height="35px" src="/twitter/public/assets/Profile_IMG/5f41b81d5705e.jpeg" width="35px">
+                                <div>
+                                  <p class="name"><?= $follow->name ?></p>
+                                  <p class="username"><?= $follow->username ?></p>
+                                </div>
+                                <div class="bouttonFollow">
+                                  <button class="Followw" data-follow="<?=$follow->follow_id ?>" data-follower="<?= $follow->follower_id?>">Follow</button>
+                                </div>
+                               </div>
+                             </li>
+
+                            
+        <?php endforeach; ?>
+        </ul>
+        
+
+    </div>
+
+    <div class="contenu">
+    <ul class="Follow">
+        <?php foreach($params['following'] as $follow): ?>
+            <?=$follow->follower_id?>
+            <?=$follow->follow_id ?>
+                              <li class="FollowItem"><div class="profile-info">
+                                <img class="profile-imggg" height="35px" src="/twitter/public/assets/Profile_IMG/5f41b81d5705e.jpeg" width="35px">
+                                <div>
+                                  <p class="name"><?= $follow->name ?></p>
+                                  <p class="username"><?= $follow->username ?></p>
+                                </div>
+                                <div class="bouttonFollow">
+                                  <button class="Followw" data-follow="<?=$follow->follow_id ?>" data-follower="<?= $follow->follower_id?>">Follow</button>
+                                </div>
+                               </div>
+                             </li>      
+        <?php endforeach; ?>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,193 @@
+
+.navHeader{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem;
+    color: var(--secondary);
+    background: var(--background);
+}
+.header__title{
+    font-size:var(--title-size);
+    font-family: "twitter",serif;
+    font-weight: bold;
+}
+
+.header__center{
+    width: 60%;
+}
+
+.avatar{
+    background: center/contain url("../assets/img/avatar.png") no-repeat;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+}
+
+.hearder__right--icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hearder__right--icon svg{
+    width: 25px;
+    fill: var(--secondary);
+}
+
+.item-iconn ion-icon{
+    font-size: 25px;
+    color: var(--secondary);
+}
+
+
+  .CreatTweet{
+    display: flex;
+    padding-left: 20px;
+  }
+  
+  .displayIcon{
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+  
+  }
+
+  .displayIcon .item-iconn a{
+    color: var(--primary);
+    margin-right: 10px;
+  }
+  
+  .IconCreate{
+    display: inline-flex;
+    border-bottom: 1px solid var(--border) ;
+    height: 50px;
+    justify-content: space-between;
+    padding: 20px 20px 50px 50px;
+  }
+  
+  .ButtonSubTweet{
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 50px;
+    padding: 0.6rem 2.2rem;
+    text-align: center;
+    font-size: var(--text-size);
+    font-weight: 700;
+  }
+  
+  .TitleHome{
+    color: var(--white);
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .InputTweet{
+    width: 100%;
+  }
+
+  .InputTweet textarea{
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: var(--text-size);
+    color: var(--secondary);
+    background-color: var(--background);
+    outline: none;
+    overflow-y: visible;
+  }
+
+
+  
+  .InputWrite{
+    border: none;
+    width: 90%;
+    color: var(--brandBackground);
+    background-color: var(--background);
+    height: 70%;
+    font-size: 20px;
+  }
+  .GoBack{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .HOME{
+    padding-left: 20px;
+  }
+
+  .Tweetsin{
+    padding: 10px 10px 10px 10px;
+    height: auto;
+    color: var(--white);
+  }
+
+.MediaIcon input{
+    display: none;
+}
+
+.TweetCont .IMGprofile img{
+  height: 35px;
+  width: 35px;
+  border-radius: 50px;
+  
+}
+
+.TweetCont{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.Contenumedia img{
+  width: 200px;
+  height: 200px;
+}
+
+.TweetCont{
+  padding: 20px 20px 20px 20px;
+  border: 1px solid var(--border) ;
+}
+
+
+@media screen and (max-width: 1200px){
+
+    a.tweet-btnn{
+        font-size: 20px;
+        width: auto;
+        padding: 12px;
+      }
+      a.tweet-btnn ion-icon{
+        display: inline-block;
+      }
+      a.tweet-btnn .text{
+        display: none;
+      }
+      .profile-infoo > div{
+        display: none;
+      }
+    
+      .profile-btnn .option-iconn{
+        display: none;
+      }
+      img .profile-imggg{
+        margin-right: 0;
+      }
+      a.profile-btnn{
+        width: 55px;
+      }
+}
+
+@import url("tweet.css");

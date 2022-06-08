@@ -1,0 +1,21 @@
+:root{
+    --background: rgb(0, 0, 0);
+    --primary: #1d9bf0;
+    --secondary: #D9D9D9;
+    --tertiary: #6e767d;
+    --text-size:1.7rem;
+    --border:#fff2;
+    --white: #fff;
+    --brandBackground: #15181C;
+    --certificateBackground: #1d9bf0;
+    --title-size: calc(var(--text-size) + 0.4rem);
+    --small-size: calc(var(--text-size) - 0.4rem);
+}
+
+*,:before,::after,html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+  
+
+@import url("./fonts.css");

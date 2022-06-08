@@ -1,0 +1,77 @@
+<?php if(isset($params['user']) && !empty($params['user'])){
+  $user = $params['user']; ?>
+                                            
+<div class="HeadContain">
+      <div class="GoBack">
+      <div class="arrow">
+        <a href="linkArrow"><ion-icon name="arrow-back-outline"></ion-icon></a>
+      </div>
+      
+      <div class="NAMECOUNT">
+        <div class="HeadName">
+          <p class="HeadNamee"><?= $user->name ?? 'Profile' ?></p>
+        </div>
+        <div ContainCount>
+          <p class="NumTweet">0 tweet</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+    <div class="ContainBanner">
+          <img class="BannerImg" src="<?= SCRIPTS ?>assets/bannerImg/D-jnKUPU4AE3hVR.jpg">
+    </div>
+    <div class="ContainProfilePic">
+      <img class="ProfilePic" height="95px" src="<?= SCRIPTS ?>assets/Profile_IMG/5f41b81d5705e.jpeg" width="95px">
+    </div>
+    <div class="ContainInfo">
+         <div class="EditButton">
+               <a class="ButtEdit" href="#">edit profile</a>
+         </div>
+
+         <div class="elementName">
+               <div class="profileName"><p class="HeadNamee"><?= $user->name ?? '' ?></p></div>
+               <div class="profileUsername"><p class="usernameUse">@<?= $user->username ?? isset($params['username']) && !empty($params['username']) ? $params['username'] : '' ?></p></div>
+         </div>
+  <?php if(isset($params['user']) && empty($params['user'])){ ?>
+         <div class="ContainLocation">
+               <div class="Location">
+                     <div class="iconLocation"><ion-icon name="location-outline"></ion-icon></div>
+                     <p class="PLocation">Paris, France</p>
+               </div>
+               <div class="DateJoin">
+                     <div><p class="PDate"> <ion-icon name="calendar-outline"></ion-icon> Joined <?= date('F Y',strtotime($user->register_date)) ?> </p></div>
+                  
+               </div>
+         </div>
+         <div class="ContainFollow">
+               <div class="Following">
+                     <a class="LinkFollowing" href="#">0 Following</a>
+               </div>
+               <div class="Followers">
+                     <a class="LinkFollowers" href="#">0 Followers</a>
+               </div>
+         </div>
+
+         <nav class="NavProfile">
+              <div class="ContainTweetsPro">
+                   <a class="linkTweetsPro" href="#">Tweets</a>
+              </div>
+              <div class="ContainReplies">
+                  <a class="linkReplies" href="#">Tweets & replies</a>
+              </div>
+           <div class="ContainMedia">
+             <a class="linkMedia" href="#">Media</a>
+           </div>
+           <div class="ContainLikes">
+             <a class="linkReplies" href="#">Likes</a>
+           </div>
+         </nav>
+         <?php } ?>
+    </div>
+    <div class="ShowXTweet">
+      <button class="SHOW">Show xx Tweets</button>
+    </div>
+    
+    <?php } ?>

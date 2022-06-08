@@ -1,0 +1,37 @@
+<h1>Edit Profile</h1>
+<div class="col-lg-12">
+    <div class="table-responsive"> 
+        <table class="table table-bordered mt-4 mb-50">
+            <thead class="thead-dark">
+                <tr>
+                <th scope="col" class="h4 text-center">#</th>
+                <th scope="col" class="h4 text-center ">prenom</th>
+                <th scope="col" class="h4 text-center">date de naissance</th>
+                <th scope="col" class="h4 text-center">nom</th>
+                <th scope="col" class="h4 text-center">email</th>
+                <th scope="col" class="h4 text-center">passWORD</th>
+                <th scope="col" class="h4 text-center">genre</th>
+                <th scope="col" class="h4 text-center">ville</th>
+                <th scope="col" class="h4 text-center">pays</th>
+                <th scope="col" class="h4 text-center">loisir</th>
+                </tr>
+            </thead>
+            <tbody>
+            <form method="post" >
+            <!-- <?php foreach($params['user'] as $user):?> -->
+                <!-- <tr> -->
+                <th scope="row" class="h4 text-center">
+                <input type="text" name="firstname" value="<?= htmlspecialchars($user) ?>">
+                </th>
+                <!-- </tr> -->
+                <?php endforeach ?> 
+
+                    <div class="validerAd">
+                        <button type="submit" name="divers_2" class="btn btn-success">Valider</button>
+                    </div>
+
+                </form>
+            </tbody>
+        </table>
+    </div>
+</div>

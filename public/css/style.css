@@ -1,0 +1,466 @@
+body {
+  background: var(--background);
+  color: var(--secondary);
+  font-size: var(--text-size);
+  font-family: TwitterChirp, -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+p {
+  font-size: var(--text-size);
+  font-family: TwitterChirp, -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: var(--font-size);
+    font-family: TwitterChirp, -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+  }
+.title{
+  font-size: var(--title-size);
+  font-weight: 800;
+}
+.item-iconn {
+  font-size: 25px;
+  color: var(--secondary);
+}
+#arrowBack{
+  font-size: 35px;
+}
+
+.tout {
+  display: flex;
+}
+
+.MainContainer {
+  /* max-width: 600px; */
+  width: 60%;
+  /* min-width: 500px; */
+  height: auto;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+}
+
+
+.Right {
+  position: relative;
+  padding-left: 20px;
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.MainHeader{
+  display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: flex-start;
+    padding:1rem;
+    color: var(--secondary);
+    background: var(--background);
+}
+
+.MainHeader__arrow{
+  width: 10%;
+  display: flex;
+}
+
+.SearchBarCenter{
+  width: 70%;
+}
+
+.Look {
+  border: none;
+  background-color: transparent;
+  color: var(--secondary);
+  width: 100%;
+  outline: none;
+}
+
+.SearchBar {
+  background-color: var(--brandBackground);
+  border-radius: 50px;
+  display: flex;
+  align-content: center;
+  align-items: stretch;
+  padding: 0.5rem 0;
+  margin-bottom: 20px;
+  font-size: var(--text-size);
+  color: var(--secondary);
+}
+
+
+.SearchBar:focus-within{
+  border: 1px solid var(--primary);
+}
+
+.SearchBar:focus-within ion-icon{
+ color: var(--primary);
+}
+
+.SearchBar ion-icon {
+  color: var(--secondary);
+}
+
+.cancelSearch{
+  margin-right: 1rem;
+  display: none;
+}
+
+.logocherche {
+  width: 10%;
+  margin-left: 2rem;
+}
+
+.searchInputDiv{
+  width: 80%;
+}
+
+/* loader */
+.polling_message {
+  color: white;
+  float: left;
+  margin-right: 2%;
+}
+
+.view_port {
+  background-color: black;
+  height: 25px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cylon_eye {
+  background-color: var(--primary);
+  background-image:         linear-gradient(to right, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+  color: white;
+  height: 100%;
+  width: 20%;
+
+  -webkit-animation: 4s linear 0s infinite alternate move_eye;
+          animation: 4s linear 0s infinite alternate move_eye;
+}
+
+@-webkit-keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+        @keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+
+
+
+.containerSearchResult{
+  z-index: 1000;
+  text-align: center;
+  position: absolute;
+  top: 5.3rem;
+  min-height: 100px;
+  max-height:500px ;
+  height: auto;
+  width: 93%;
+  margin: auto;
+  overflow: auto;
+  font-size: var(--text-size);
+  color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: var(--background);
+  box-shadow: rgb(149 157 165 / 20%) 0px 0px 6px 1px;
+  
+}
+.searchResult{
+  text-align: left;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  margin-bottom: 20px;
+  font-size: var(--text-size);
+  color: var(--secondary);
+}
+
+.searchResult__icon{
+  margin-right: 1rem;
+  margin-left: 1rem;
+  font-size: 60px;
+  color: var(--secondary);
+}
+
+.searchResult__hashtag{
+  font-size: var(--text-size);
+  color: var(--secondary);
+  margin-left: 2rem;
+}
+
+.searchResult__avatar img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.searchResult__content{
+  margin-left: 1rem;
+}
+.searchResult__tag{
+  color: var(--secondary);
+  font-weight: 500;
+}
+.searchResult__name{
+  color: var(--secondary);
+  font-weight: 700;
+}
+.searchResult__username{
+  margin: 0.5rem 0;
+  color: var(--tertiary);
+}
+.searchResult__description{
+  color: var(--tertiary);
+}
+
+.TrendContain {
+  background-color: var(--brandBackground);
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding-bottom: 10px;
+  padding-left: 1rem;
+}
+
+.TrendItem {
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.TrendItem a{ 
+    font-weight: 700;
+    font-size: var(--text-size);
+    margin: 0.4rem 0;
+    line-height: 22px;
+}
+
+.TrendItem:hover {
+  background-color: var(--brandBackground);
+}
+
+.trendTitle {
+  padding: 10px 10px 10px 10px;
+  color: var(--secondary);
+  font-size:var(--title-size);
+  font-weight: 700;
+}
+.listWhoToFollow{
+    margin-bottom: 1rem;
+}
+.showMore {
+  height: 30px;
+  margin-top: 1.5rem;
+  padding-left: 10px;
+}
+
+.SHOW {
+  border: none;
+  width: 100%;
+  background-color: var(--background);
+  color: var(--primary);
+  border-bottom: 1px solid var(--border);
+  height: 50px;
+  font-size: 15px;
+}
+
+.option-iconn ion-icon {
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+a.tweet-btnn ion-icon {
+  font-size: 20px;
+  color: var(--secondary);
+  display: none;
+}
+
+a.tweet-btnn {
+  display: block;
+  width: 180px;
+  background-color: var(--primary);
+  color: var(--secondary);
+  text-align: center;
+  padding: 15px;
+  margin-top: 5px;
+  border-radius: 50px;
+}
+
+a.tweet-btnn .text{
+  font-size: var(--text-size);
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+a.tweet-btnn:hover {
+  background-color: var(--primary);
+}
+
+.moreofmore {
+  color: var(--primary);
+}
+
+.SujetType {
+  color: var(--tertiary);
+    font-size: var(--small-size);
+}
+
+.NumTweet {
+  color: var(--tertiary);
+  font-size: var(--small-size);
+}
+.name {
+  color: var(--secondary);
+  font-size: var(--font-size);
+  font-weight: 700;
+}
+
+.username {
+  color: var(--tertiary);
+  font-size: var(--font-size);
+  margin-top: 0.6rem;
+}
+
+.FollowItem {
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.titleWhoToFollow {
+  color: var(--secondary);
+  font-size: var(--title-size);
+  font-weight: 700;
+}
+.bouttonFollow {
+  margin-left: auto;
+}
+
+.Followw {
+  background-color: var(--primary);
+  border: none;
+  color: var(--secondary);
+  border-radius: 50px;
+  padding: 0.6rem 2rem;
+  margin-right: 1rem;
+  height: auto;
+  display: flex;
+flex-direction: column;
+}
+
+.Qui {
+  background-color: var(--brandBackground);
+  border-radius: 20px;
+  margin-top: 20px;
+  padding-left: 1rem;
+}
+
+.FollowItem:hover {
+  background-color: var(--brandBackground);
+}
+
+.hos {
+  padding: 10px 10px 10px 10px;
+}
+
+.HeadNamee {
+  color: var(--secondary);
+}
+
+a.profile-btnn {
+  position: fixed;
+  bottom: 0;
+  width: 225px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+a.profile-btnn:hover {
+  background-color: var(--brandBackground);
+}
+
+.profile-infoo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img.profile-imggg {
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.profile-infoo .nameee {
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.profile-infoo .usernamee {
+  color: var(--tertiary);
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    padding: 0 1em;
+  }
+
+  /* .MainContainer {
+    max-width: 60%;
+  }
+  .Right {
+    width: 40%;
+  } */
+  .tout {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 816px) {
+  .Right {
+    display: none;
+  }
+  .MainContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  a.tweet-btnn {
+    font-size: 20px;
+    width: auto;
+    padding: 12px;
+  }
+  a.tweet-btnn ion-icon {
+    display: inline-block;
+  }
+  a.tweet-btnn .text {
+    display: none;
+  }
+}

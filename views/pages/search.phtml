@@ -1,0 +1,67 @@
+<div class="MainHeader">
+    <div class="MainHeader__arrow">
+        <button id="arrowBack" class="item-iconn btn"><ion-icon name="arrow-back-outline"></ion-icon></button>
+    </div>
+    <div class="SearchBar SearchBarCenter">
+        <div class="logocherche item-iconn">
+            <ion-icon name="search-outline"></ion-icon>
+        </div>
+        <div class="searchInputDiv">
+            <form id="formSearch">
+            <input type="text" id="search" name="q" class="Look" placeholder="Search Twitter" autocomplete="off" value="<?=isset($_GET['q']) ? htmlspecialchars($_GET['q']) : ''?>">
+            </form>
+        </div>
+        <div class="cancelSearch item-iconn">
+            <ion-icon name="close-circle"></ion-icon>
+        </div>
+     </div>
+ 
+</div>
+ <!-- ?php var_dump($params['tweet']) ?> -->
+<?php foreach($params['tweet'] as $tweet): ?>
+<div class="ContainTweet">
+    <div class="ContainTweet__header">
+        <div class="ContainTweet__header__avatar">
+            <img class="ContainTweet__header__avatar__img" src="<?= SCRIPTS ?>assets/img/avatar.png" alt="ada">
+        </div>
+        <div class="ContainTweet__header__info">
+            <div class="ContainTweet__header__info__name">
+                <p class="ContainTweet__header__info__name__text"><?= $tweet->name ?? '' ?></p>
+            </div>
+            <div class="ContainTweet__header__info__username">
+                <p class="ContainTweet__header__info__username__text">@<?= $tweet->username ?? '' ?></p>
+            </div>
+        </div>
+    </div>
+    <div class="ContainTweet__content">
+        <p class="ContainTweet__content__text"><?= $tweet->content ?? '' ?></p>
+    </div>
+    <div class="ContainTweet__footer">
+        <div class="ContainTweet__footer__date">
+            <p class="ContainTweet__footer__date__text"><?= date('F j, Y',strtotime($tweet->tweet_date)) ?></p>
+        </div>
+        <div class="ContainTweet__footer__actions">
+            <div class="ContainTweet__footer__actions__action">
+                <button class="ContainTweet__footer__actions__action__button">
+                    <ion-icon name="heart-outline"></ion-icon>
+                </button>
+            </div>
+            <div class="ContainTweet__footer__actions__action">
+                <button class="ContainTweet__footer__actions__action__button">
+                    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                </button>
+            </div>
+            <!-- <div class="ContainTweet__footer__actions__action>">
+                <button class="ContainTweet__footer__actions__action__button">
+                    <ion-icon name="share-outline"></ion-icon>
+                </button>
+            ?= $tweet->liked ? 'ContainTweet__footer__actions__action--liked' : '' ?>">
+                <button class="ContainTweet__footer__actions__action__button">
+                    <ion-icon name="heart-outline"></ion-icon>
+                </button>
+            </div> -->
+        </div>
+    </div>
+</div>
+<?php endforeach; ?>
+

@@ -1,0 +1,68 @@
+<?php 
+             $userID = $_SESSION['user_id'];
+             $usernameHome = $_SESSION['username'];
+             $nameHome = $_SESSION['name'];
+             $emailHome = $_SESSION['email'];
+             if($_SESSION['avatar'] === null){
+               $avatar = 'assets/Profile_IMG/avatar.png';
+             }else{
+               $avatar = $_SESSION['avatar'];
+             }
+             
+             
+          ?>
+          
+        <div class="navHeader">
+          <div class="header__center">
+              <h2 aria-level="2" role="heading"> <span class="header__title title">Home</span></h2>
+          </div>
+          <div class="hearder__right">
+              <div class="hearder__right--icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><g><path d="M22.772 10.506l-5.618-2.192-2.16-6.5c-.102-.307-.39-.514-.712-.514s-.61.207-.712.513l-2.16 6.5-5.62 2.192c-.287.112-.477.39-.477.7s.19.585.478.698l5.62 2.192 2.16 6.5c.102.306.39.513.712.513s.61-.207.712-.513l2.16-6.5 5.62-2.192c.287-.112.477-.39.477-.7s-.19-.585-.478-.697zm-6.49 2.32c-.208.08-.37.25-.44.46l-1.56 4.695-1.56-4.693c-.07-.21-.23-.38-.438-.462l-4.155-1.62 4.154-1.622c.208-.08.37-.25.44-.462l1.56-4.693 1.56 4.694c.07.212.23.382.438.463l4.155 1.62-4.155 1.622zM6.663 3.812h-1.88V2.05c0-.414-.337-.75-.75-.75s-.75.336-.75.75v1.762H1.5c-.414 0-.75.336-.75.75s.336.75.75.75h1.782v1.762c0 .414.336.75.75.75s.75-.336.75-.75V5.312h1.88c.415 0 .75-.336.75-.75s-.335-.75-.75-.75zm2.535 15.622h-1.1v-1.016c0-.414-.335-.75-.75-.75s-.75.336-.75.75v1.016H5.57c-.414 0-.75.336-.75.75s.336.75.75.75H6.6v1.016c0 .414.335.75.75.75s.75-.336.75-.75v-1.016h1.098c.414 0 .75-.336.75-.75s-.336-.75-.75-.75z"></path></g></svg>
+              </div>
+          </div>
+        </div>
+
+          <div class="CreatTweet">
+            <div class="TweetPic">
+              <img class="profile-imggg" height="45px" src="<?= SCRIPTS ?><?php echo $avatar ?>" width="45px" alt="">
+            </div>
+            <div class="InputTweet">
+              <textarea name="tweetContent" id="tweetContent">what's new </textarea>
+            </div>
+          </div>
+          <div class="IconCreate">
+            <div class="displayIcon">
+              <div class="MediaIcon item-iconn">
+                
+                  <a class="linkMedia item-iconn" href="#"><label for="getImage"><ion-icon color="red" name="image-outline"></ion-icon></label><input type="file" id="getImage" name="sample_image"></a>
+              </div>
+              <div class="MediaGif item-iconn">
+                <a class="linkGif item-iconn" href="#"><ion-icon color="red" name="bandage-outline"></ion-icon>
+                </a>
+              </div>
+              <div class="MediaEmoji item-iconn">
+                <a class="linkEmoji item-iconn" href="#"><ion-icon color="red" name="happy-outline"></ion-icon></a>
+              </div>
+              <div class="MediaCalender item-iconn">
+                <a class="linkCalender item-iconn" href="#"><ion-icon color="red" name="calendar-outline"></ion-icon></a>
+              </div>
+            </div>
+            <div class="BouttonTweet item-iconn">
+                <input type="button" class="ButtonSubTweet" value="Tweet" id="tweeteButton">
+            </div>
+          </div>
+          <div class="ShowXTweet">
+            <button class="SHOW">Show xx Tweets</button>
+            <!-- <form method="post" id='formTest'> -->
+              <input type="hidden" id="user_id" value="117">
+              <input type="text" id = "theme">
+              <button type="button" id="btnTheme">Search</button>
+            <!-- </form> -->
+          </div>
+          
+          <div class="SectContentTweet">
+                <div class="Tweetsin" id="pourTweet">
+                      
+                </div>
+          </div>
